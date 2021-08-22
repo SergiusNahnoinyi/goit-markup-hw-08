@@ -1,0 +1,28 @@
+/* Шрифт */
+$primary-text: 'Roboto';
+$secondary-text: 'Raleway';
+$reserve-text: sans-serif;
+
+/* Свойства шрифта */
+$primary-font-size: 14px;
+$primary-line-height: 1.2;
+$primary-letter-spacing: 0.03em;
+
+/* Цвет шрифта */
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$hero-text-color: #fff;
+
+/* Цвет фона */
+$colors: (
+  'primary': #fff,
+  'secondary': #2f303a,
+  'accent': #2196f3,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+/* Зазор карточёк продуктов */
+$portfolio-card-gap: 30px;
