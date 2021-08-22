@@ -1,0 +1,13 @@
+.company-name {
+  display: block;
+  font-family: $secondary-text;
+  font-weight: bold;
+  font-size: 26px;
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.company-name__text {
+  display: inline-block;
+  color: getColor('accent');
+}

@@ -1,0 +1,12 @@
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * #{$portfolio-card-gap});
+  margin-top: calc(-1 * #{$portfolio-card-gap});
+}
+
+.portfolio-grid__item {
+  flex-basis: calc(100% / 3 - #{$portfolio-card-gap});
+  margin-left: $portfolio-card-gap;
+  margin-top: $portfolio-card-gap;
+}
