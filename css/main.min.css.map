@@ -4,7 +4,9 @@
     "sources": [
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
-        "../sass/base/_common.scss"
+        "../sass/base/_common.scss",
+        "../sass/utils/_mixins.scss",
+        "../sass/utils/_placeholders.scss"
     ],
     "names": [],
     "file": "main.min.css"
