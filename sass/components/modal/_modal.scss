@@ -1,0 +1,41 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 450px;
+  height: 609px;
+  padding: 40px;
+  align-items: flex-end;
+  background-color: getColor('primary');
+  border-radius: 4px;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__btn-modal-close {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.btn-modal-close {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+
+  &__icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: getColor('accent');
+  }
+}

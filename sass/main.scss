@@ -14,3 +14,9 @@
 @import './components/mobile-menu/social-list';
 
 @import './components/hero/hero';
+
+// Модальное окно
+@import 'components/modal/backdrop';
+@import 'components/modal/modal';
+@import 'components/modal/enquiry-form';
+@import 'components/modal/send-button';
