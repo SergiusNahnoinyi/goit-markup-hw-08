@@ -1,3 +1,7 @@
+.features-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .features-list__thumb {
   display: flex;
   justify-content: center;
