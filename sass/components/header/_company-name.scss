@@ -1,0 +1,15 @@
+.company-name {
+  display: inline-block;
+  font-family: $secondary-text;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.company-name__text {
+  display: inline-block;
+  color: getColor('accent');
+}

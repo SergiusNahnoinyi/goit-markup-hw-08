@@ -1,0 +1,23 @@
+.contacts-list {
+  margin-bottom: 64px;
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contacts-list__link {
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.contacts-list__link--grey {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+  text-decoration: none;
+}

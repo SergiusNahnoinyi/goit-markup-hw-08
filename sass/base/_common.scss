@@ -26,3 +26,12 @@ img {
 ul {
   list-style: none;
 }
+
+.container {
+  max-width: 1200px;
+  min-width: 280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
