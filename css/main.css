@@ -59,6 +59,10 @@ ul {
   font-size: 28px;
 }
 
+.section__title--hidden {
+  visibility: hidden;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -791,9 +795,7 @@ ul {
   background-origin: border-box;
 }
 
-.enquiry-form__input--hidden:checked
-~ .enquiry-form__label--bigger-text
-.enquiry-form__icon--checked {
+.enquiry-form__input--hidden:checked ~ .enquiry-form__label--bigger-text .enquiry-form__icon--checked {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
 }
@@ -827,5 +829,45 @@ ul {
 .page-header--theme-shadow {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section__button-list {
+  margin-bottom: 40px;
+}
+
+.button-list__item {
+  display: inline-block;
+}
+
+.button-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-list__item:not(:nth-child(n + 4)) {
+  margin-bottom: 15px;
+}
+
+.button {
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  background-color: #f5f4fa;
+  cursor: pointer;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover, .button:focus {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #fff;
+  background-color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
