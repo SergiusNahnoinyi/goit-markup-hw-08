@@ -34,8 +34,8 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
   min-width: 320px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -126,16 +126,14 @@ ul {
 }
 
 .hero {
-  max-width: 480px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
+  padding: 118px 0;
   text-align: center;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-image-480.jpg");
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image-480.jpg");
-  background-size: 480px 400px;
+  background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -143,6 +141,12 @@ ul {
     background-color: #2f303a;
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-image@2x.jpg");
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
   }
 }
 

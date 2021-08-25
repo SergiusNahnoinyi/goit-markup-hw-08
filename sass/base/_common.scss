@@ -28,8 +28,8 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
-  min-width: 320px;
+  min-width: 320px; // Мин. ширина контейнера. Меньше которой будет полоса прокрутки
+  max-width: 1200px; // Макс. ширина контейнера. Чтобы не тянулся до бесконечности, а фиксировался при 1200рх
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
