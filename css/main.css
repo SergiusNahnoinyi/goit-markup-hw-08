@@ -218,9 +218,14 @@ ul {
   position: relative;
 }
 
-.services-list__item::before {
-  content: '';
-  display: block;
+.services-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.services-list__overlay {
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -228,16 +233,7 @@ ul {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.services-list__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .services-list__title {
-  position: absolute;
-  top: 91%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
