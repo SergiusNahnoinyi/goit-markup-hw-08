@@ -2,7 +2,7 @@
   display: block;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.1;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -14,7 +14,7 @@
   margin-bottom: 10px;
 
   &:nth-of-type(4n) {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   &:last-of-type {
@@ -53,8 +53,8 @@
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .enquiry-form__input:hover + &,
-  .enquiry-form__input:focus + & {
+  .enquiry-form__input:hover+&,
+  .enquiry-form__input:focus+& {
     fill: getColor('accent');
   }
 }
@@ -77,7 +77,7 @@
   }
 }
 
-.enquiry-form__input--hidden {
+.enquiry-form__input--custom {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -86,45 +86,33 @@
 
 .enquiry-form__label--bigger-text {
   position: relative;
-  overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 12px;
+  line-height: 1.7;
   color: $secondary-text-color;
-
-  &::before {
-    content: '';
-    display: inline-block;
-    margin-right: 7px;
-    width: 16px;
-    height: 15px;
-    border: 2px solid black;
-    border-radius: 4px;
-  }
 }
 
 .enquiry-form__link {
   text-decoration: none;
   text-decoration-line: underline;
   color: getColor('accent');
-  margin-left: 3px;
 }
 
-.enquiry-form__icon--checked {
-  position: absolute;
-  top: 15px;
-  left: 1px;
+.enquiry-form__icon--custom {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
 }
 
-.enquiry-form__input--hidden:checked ~ .enquiry-form__label--bigger-text::before {
+.enquiry-form__input--custom:checked + .enquiry-form__icon--custom {
   background-color: #2196f3;
   border-color: #2196f3;
   background-origin: border-box;
+  background-image: url('../images/check.svg');
+  background-size: contain;
+  background-origin: border-box;
 }
 
-.enquiry-form__input--hidden:checked
-  ~ .enquiry-form__label--bigger-text
-  .enquiry-form__icon--checked {
-  transform: translateY(-15px);
-}
