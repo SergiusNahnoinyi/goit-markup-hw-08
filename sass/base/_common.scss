@@ -6,6 +6,10 @@ body {
   color: $primary-text-color;
   background-color: getColor('primary');
 }
+// JS вешает этот класс, когда модалка открыта, а этому класс задается свойство, чтобы убрать скролл во время открытой модалки
+body.modal-open { 
+  overflow: hidden;
+}
 
 h1,
 h2,

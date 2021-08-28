@@ -84,12 +84,10 @@
   position: absolute;
 }
 
-.enquiry-form__label--bigger-text {
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  line-height: 1.7;
+.enquiry-form__label--custom {
+  // display: flex;
+  // align-items: center;
+  font-size: 12px;
   color: $secondary-text-color;
 }
 
@@ -103,6 +101,7 @@
     display: inline-block;
     width: 16px;
     height: 15px;
+    margin-right: 8px;
     border: 2px solid black;
     border-radius: 4px;
 }
