@@ -85,8 +85,6 @@
 }
 
 .enquiry-form__label--custom {
-  // display: flex;
-  // align-items: center;
   font-size: 12px;
   color: $secondary-text-color;
 }
@@ -98,6 +96,7 @@
 }
 
 .enquiry-form__icon--custom {
+    vertical-align: middle;
     display: inline-block;
     width: 16px;
     height: 15px;
