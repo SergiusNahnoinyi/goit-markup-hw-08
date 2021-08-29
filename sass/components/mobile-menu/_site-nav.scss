@@ -1,12 +1,12 @@
-.site-nav {
+.mobile-site-nav {
   margin-bottom: 302px;
 }
 
-.site-nav__item:not(:last-child) {
+.mobile-site-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.site-nav__link {
+.mobile-site-nav__link {
   display: block;
   font-weight: 500;
   font-size: 40px;
@@ -21,6 +21,6 @@
   }
 }
 
-.site-nav__link--current {
+.mobile-site-nav__link--current {
   color: getColor('accent');
 }

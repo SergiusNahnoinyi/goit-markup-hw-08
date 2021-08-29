@@ -21,3 +21,9 @@
     fill: getColor('accent');
   }
 }
+
+.menu-toggle {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
