@@ -809,6 +809,32 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    visibility: visible;
+    -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    overflow-y: scroll;
+  }
+  .backdrop.backdrop--hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .backdrop.backdrop--hidden.modal {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .modal {
     position: relative;
@@ -854,6 +880,45 @@ ul {
     background-color: #fff;
     border-radius: 4px;
     opacity: 1;
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__btn-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    height: 597px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background-color: #fff;
+    border-radius: 4px;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
     -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
