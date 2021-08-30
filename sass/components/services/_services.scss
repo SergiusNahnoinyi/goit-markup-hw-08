@@ -1,6 +1,11 @@
 .section--no-top-padding {
   padding-top: 0;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+      padding-top: 0;
+      padding-bottom: 94px;
+  }
 }
 
 .services-list__item {

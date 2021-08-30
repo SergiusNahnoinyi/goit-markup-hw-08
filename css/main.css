@@ -82,6 +82,14 @@ ul {
   font-size: 28px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
 .section__title--hidden {
   visibility: hidden;
 }
@@ -476,6 +484,13 @@ ul {
 .section--no-top-padding {
   padding-top: 0;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section--no-top-padding {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
 }
 
 .services-list__item {
