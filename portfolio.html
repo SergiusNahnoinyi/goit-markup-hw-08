@@ -188,78 +188,72 @@
     </main>
     <!-- Разметка Footer -->
     <footer class="page-footer">
-      <div class="container">
-        <a href="./index.html" class="company-name--inverse"><span class="company-name__text">Web</span>Studio</a>
-        <address class="company-adress">
-          <ul class="company-adress__list" id="contacts">
-            <li class="company-adress__item">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="company-adress__item"><a href="mailto:info@devstudio.com" class="company-adress__link"
-                aria-label="Написать на почту">info@devstudio.com</a></li>
-            <li class="company-adress__item"><a href="tel:+380961111111" class="company-adress__link"
-                aria-label="Позвонить по телефону">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
-        <div class="social-list-thumb">
-          <b class="social-list-thumb__title">Присоединяйтесь</b>
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a href="https://www.instagram.com/" class="social-list__link social-list__link--gray-background"
-                aria-label="Instagram">
-                <svg class="social-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram">
-                  </use>
-                </svg>
-                <!-- Instagram -->
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="https://www.twitter.com/" class="social-list__link social-list__link--gray-background"
-                aria-label="Twitter">
-                <svg class="social-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter">
-                  </use>
-                </svg>
-                <!-- Twitter -->
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="https://www.facebook.com/" class="social-list__link social-list__link--gray-background"
-                aria-label="Facebook">
-                <svg class="social-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook">
-                  </use>
-                </svg>
-                <!-- Facebook -->
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="https://www.linkedin.com/" class="social-list__link social-list__link--gray-background"
-                aria-label="Linkedin">
-                <svg class="social-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin">
-                  </use>
-                </svg>
-                <!-- Linkedin -->
-              </a>
-            </li>
-          </ul>
+        <div class="container page-footer__container">
+            <div class="page-footer__thumb">
+                <a href="./index.html" class="company-name--inverse"><span class="company-name__text">Web</span>Studio</a>
+                <address class="company-adress">
+                <ul class="company-adress__list" id="contacts">
+                    <li class="company-adress__item">г. Киев, пр-т Леси Украинки, 26</li>
+                    <li class="company-adress__item"><a href="mailto:info@devstudio.com" class="company-adress__link" aria-label="Написать на почту">info@devstudio.com</a></li>
+                    <li class="company-adress__item"><a href="tel:+380961111111" class="company-adress__link" aria-label="Позвонить по телефону">+38 096 111 11 11</a></li>
+                </ul> 
+                </address>
+            </div>
+                <div class="social-list-thumb">
+                <b class="social-list-thumb__title">Присоединяйтесь</b>
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="https://www.instagram.com/" class="social-list__link social-list__link--gray-background" aria-label="Instagram">
+                            <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram">
+                                </use>
+                            </svg>
+                            <!-- Instagram -->
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.twitter.com/" class="social-list__link social-list__link--gray-background" aria-label="Twitter">
+                            <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter">
+                                </use>
+                            </svg>
+                            <!-- Twitter -->
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.facebook.com/" class="social-list__link social-list__link--gray-background" aria-label="Facebook">
+                            <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook">
+                                </use>
+                            </svg>
+                            <!-- Facebook -->
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.linkedin.com/" class="social-list__link social-list__link--gray-background" aria-label="Linkedin">
+                            <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                            <!-- Linkedin -->
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            <form class="signup-form" name="signup_form" autocomplete="off" novalidate>
+                <b class="signup-form__title">Подпишитесь на рассылку</b>
+                <div class="signup-form__content">
+                    <label for="signup-form__label"><!-- Email --></label>
+                    <input class="signup-form__input" type="email" name="email" placeholder="E-mail" id="signup-email"/>
+                </div>
+                <button class="telegram-button" type="submit">Подписаться
+                    <svg class="telegram-button__icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send">
+                        </use>
+                    </svg>
+                </button>
+            </form>
         </div>
-        <form class="signup-form" name="signup_form" autocomplete="off" novalidate>
-          <b class="signup-form__title">Подпишитесь на рассылку</b>
-          <div class="signup-form__content">
-            <label for="signup-form__label">
-              <!-- Email -->
-            </label>
-            <input class="signup-form__input" type="email" name="email" placeholder="E-mail" id="signup-email" />
-          </div>
-          <button class="telegram-button" type="submit">Подписаться
-            <svg class="telegram-button__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send">
-              </use>
-            </svg>
-          </button>
-        </form>
-      </div>
     </footer>
     <!-- Разметка модального окна мобильного меню -->
     <div class="menu-container js-menu-container" id="mobile-menu">
