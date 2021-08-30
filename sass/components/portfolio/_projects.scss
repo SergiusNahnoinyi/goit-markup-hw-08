@@ -15,6 +15,7 @@
   overflow: hidden;
 }
 
+
 .project-link__description {
   position: absolute;
   bottom: 0;
@@ -32,6 +33,20 @@
   .project-link:focus & {
     transform: translateY(0%);
   }
+
+  @media screen and (max-width: 479px) {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 5px;
+    }
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+      }
 }
 
 .project-link__meta {
