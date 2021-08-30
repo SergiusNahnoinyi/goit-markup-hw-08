@@ -55,3 +55,11 @@
 .telegram-button__icon {
   margin-left: 10px;
 }
+
+.signup-form {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
