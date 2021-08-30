@@ -69,6 +69,13 @@ ul {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section__title {
   margin-bottom: 30px;
   text-align: center;
@@ -447,6 +454,21 @@ ul {
   }
   .features-list__item {
     width: calc((100% - 2 * 30px)/2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features-list__item {
+    width: calc((100% - 4 * 30px)/4);
     margin: 15px;
   }
 }

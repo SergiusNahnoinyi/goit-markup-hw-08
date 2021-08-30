@@ -36,3 +36,16 @@
     margin: 15px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .features-list__item {
+    width: calc((100% - 4 * 30px)/4);
+    margin: 15px;
+  }
+}
