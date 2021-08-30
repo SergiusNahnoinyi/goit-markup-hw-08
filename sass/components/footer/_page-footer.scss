@@ -4,3 +4,20 @@
   text-align: center;
   background-color: getColor('secondary');
 }
+
+@media screen and (min-width: 768px) {
+  
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-footer__thumb {
+  display: flex;
+  flex-direction: column;
+  margin-right: 165px;
+  // margin-bottom: 60px;
+}
+}

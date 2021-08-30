@@ -1,5 +1,9 @@
 .social-list-thumb {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .social-list-thumb__title {

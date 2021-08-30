@@ -576,6 +576,32 @@ ul {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page-footer__thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 165px;
+  }
+}
+
 .company-name--inverse {
   font-family: "Raleway";
   font-weight: bold;
@@ -587,6 +613,12 @@ ul {
 .company-adress {
   margin-top: 20px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .company-adress {
+    margin-bottom: 0px;
+  }
 }
 
 .company-adress__item {
@@ -614,6 +646,12 @@ ul {
 
 .social-list-thumb {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-list-thumb {
+    margin-bottom: 0px;
+  }
 }
 
 .social-list-thumb__title {
@@ -717,8 +755,7 @@ ul {
 @media screen and (min-width: 480px) {
   .signup-form {
     width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 60px auto 0 auto;
   }
 }
 
