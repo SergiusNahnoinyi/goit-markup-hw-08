@@ -618,6 +618,21 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-list__item {
+    width: calc((100% - 4 * 30px)/4);
+    margin: 15px;
+  }
+}
+
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
