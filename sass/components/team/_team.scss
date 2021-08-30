@@ -58,3 +58,22 @@
     fill: getColor('primary');
   }
 }
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
+
+  .team-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .team-list__item:last-child {
+    margin-bottom: 30px;
+  }
+}
