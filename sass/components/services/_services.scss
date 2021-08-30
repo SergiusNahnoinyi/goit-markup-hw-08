@@ -30,3 +30,22 @@
   text-transform: uppercase;
   color: $hero-text-color;
     }
+
+    @media screen and (min-width: 768px) {
+      .services-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * 30px);
+        margin-top: calc(-1 * 30px);
+      }
+
+      .services-list__item {
+        flex-basis: calc(100% / 3 - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
+      }
+
+      .services-list__item {
+          margin-bottom: 30px;
+        }
+    }

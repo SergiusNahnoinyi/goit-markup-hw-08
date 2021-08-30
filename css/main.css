@@ -406,6 +406,27 @@ ul {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
+  .services-list__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .services-list__item {
+    margin-bottom: 30px;
+  }
+}
+
 .section--gray-theme {
   background-color: #f5f4fa;
 }
