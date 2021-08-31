@@ -5,7 +5,28 @@
   background-color: getColor('secondary');
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: start;
+  }
+  .page-footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .page-footer__thumb {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-of-type) {
+      margin-right: 70px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   
 .page-footer__container {
   display: flex;

@@ -717,7 +717,35 @@ ul {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: start;
+  }
+  .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .page-footer__thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-footer__thumb:not(:last-of-type) {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -785,6 +813,12 @@ ul {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .page-footer__company-adress {
+    margin-top: 20px;
+  }
+}
+
 .social-list-thumb {
   margin-bottom: 60px;
 }
@@ -815,19 +849,11 @@ ul {
   color: #fff;
 }
 
-.signup-form__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 20px;
-}
-
 .signup-form__input {
-  display: block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: bottom;
   height: 50px;
   padding: 16px 15px;
   font-size: 16px;
@@ -862,6 +888,37 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .signup-form__input {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .signup-form {
+    width: 450px;
+    margin: 60px auto 0 auto;
+  }
+  .signup-form__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .signup-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .social-list-thumb {
+    margin-right: auto;
+  }
+}
+
 .telegram-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -891,13 +948,6 @@ ul {
 
 .telegram-button__icon {
   margin-left: 10px;
-}
-
-@media screen and (min-width: 480px) {
-  .signup-form {
-    width: 450px;
-    margin: 60px auto 0 auto;
-  }
 }
 
 .menu-container {

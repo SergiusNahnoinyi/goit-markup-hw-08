@@ -29,3 +29,9 @@
     color: getColor('accent');
   }
 }
+
+@media screen and (min-width: 1200px) {
+.page-footer__company-adress {
+  margin-top: 20px;
+}
+}
