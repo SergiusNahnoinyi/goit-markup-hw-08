@@ -1480,6 +1480,21 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .portfolio-grid__item {
+    width: calc((100% - 3 * 30px)/3);
+    margin: 15px;
+  }
+}
+
 .project-link {
   display: block;
   text-decoration: none;
