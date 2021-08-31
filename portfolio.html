@@ -191,7 +191,7 @@
         <div class="container page-footer__container">
             <div class="page-footer__thumb">
                 <a href="./index.html" class="company-name--inverse"><span class="company-name__text">Web</span>Studio</a>
-                <address class="company-adress">
+                <address class="company-adress page-footer__company-adress">
                 <ul class="company-adress__list" id="contacts">
                     <li class="company-adress__item">г. Киев, пр-т Леси Украинки, 26</li>
                     <li class="company-adress__item"><a href="mailto:info@devstudio.com" class="company-adress__link" aria-label="Написать на почту">info@devstudio.com</a></li>
@@ -242,11 +242,9 @@
                 </div>
             <form class="signup-form" name="signup_form" autocomplete="off" novalidate>
                 <b class="signup-form__title">Подпишитесь на рассылку</b>
-                <div class="signup-form__content">
                     <label for="signup-form__label"><!-- Email --></label>
-                    <input class="signup-form__input" type="email" name="email" placeholder="E-mail" id="signup-email"/>
-                </div>
-                <button class="telegram-button" type="submit">Подписаться
+                    <input class="signup-form__input" type="email" name="email" placeholder="E-mail" id="signup-email"/><!-- прием для удаления зазора между строчно-блочными элементами
+                    --><button class="telegram-button" type="submit">Подписаться
                     <svg class="telegram-button__icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-send">
                         </use>
